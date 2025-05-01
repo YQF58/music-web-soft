@@ -4,14 +4,7 @@
 
 YQF音乐盒
 
-<!-- PROJECT SHIELDS -->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -46,14 +39,10 @@ YQF音乐盒
   - [开发前的配置要求](#开发前的配置要求)
   - [安装步骤](#安装步骤)
 - [文件目录说明](#文件目录说明)
-- [开发的架构](#开发的架构)
 - [部署](#部署)
 - [使用到的框架](#使用到的框架)
-- [贡献者](#贡献者)
-  - [如何参与开源项目](#如何参与开源项目)
-- [版本控制](#版本控制)
 - [作者](#作者)
-- [鸣谢](#鸣谢)
+
 
 ### 上手指南
 
