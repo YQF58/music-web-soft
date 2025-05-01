@@ -11,7 +11,8 @@ YQF音乐盒
 
 <p align="center">
   <a href="https://api.imyqf.cn/music1.jpg">
-    <img src="https://api.imyqf.cn/music1.jpg" alt="Logo" width="80" height="80">
+    <img src="https://api.imyqf.cn/music2.jpg" alt="Logo" width="80" height="80">
+    <img src="https://api.imyqf.cn/music1.jpg" 
   </a>
 
   <h3 align="center">YQF音乐盒网页版</h3>
