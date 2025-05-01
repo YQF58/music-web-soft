@@ -1,0 +1,33 @@
+<config>
+	<request action='allow' >
+		<table name='!anti_sql'>
+		</table>
+		<table name='!anti_up_inject'>
+		</table>
+		<table name='!anticc'>
+			<chain  action='continue'  name='!anticc'>
+				<mark_anti_cc   request='0' second='0' wl='1' flush='0' fix_url='1' skip_cache='1'><![CDATA[HTTP/1.1 302 FOUND
+Connection: keep-alive
+Cache-Control: no-cache,no-store
+Location: {{url}}
+
+<html id='anticc_http_redirect'><body><a href='{{url}}'>continue</a></body></html>]]></mark_anti_cc>
+			</chain>
+		</table>
+		<table name='!deny_referer'>
+		</table>
+		<table name='BEGIN'>
+			<chain  action='continue'  name='!ssl_rewrite'>
+				<mark_url_rewrite  url='^http://(.*)$' dst='https://$1' nc='1' code='301'></mark_url_rewrite>
+			</chain>
+			<chain  action='table:!anticc'  name='!anticc'>
+			</chain>
+		</table>
+	</request>
+	<response action='allow' >
+		<table name='!cache_control'>
+		</table>
+		<table name='BEGIN'>
+		</table>
+	</response>
+</config>
